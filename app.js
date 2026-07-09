@@ -13,7 +13,7 @@ formulario.addEventListener("submit", async (e) => {
 
     try {
 
-        const respuesta = await fetch("http://localhost:3000/guardar", {
+      fetch("https://backend-faceboock.onrender.com/guardar", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
