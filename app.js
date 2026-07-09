@@ -12,8 +12,7 @@ formulario.addEventListener("submit", async (e) => {
     };
 
     try {
-
-      fetch("https://backend-faceboock.onrender.com/guardar", {
+        const respuesta = await fetch("https://backend-faceboock.onrender.com/guardar", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -22,14 +21,15 @@ formulario.addEventListener("submit", async (e) => {
         });
 
         if (respuesta.ok) {
-            alert("Datos enviados correctamente.");
+            const mensaje = await respuesta.text();
+            alert(mensaje);
             formulario.reset();
         } else {
             alert("Error al enviar los datos.");
         }
 
     } catch (error) {
-        console.error(error);
+        console.error("Error:", error);
         alert("No se pudo conectar con el servidor.");
     }
 });
