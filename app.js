@@ -20,12 +20,13 @@ formulario.addEventListener("submit", async (e) => {
             body: JSON.stringify(datos)
         });
 
+        const resultado = await respuesta.json();
+
         if (respuesta.ok) {
-            const mensaje = await respuesta.text();
-            alert(mensaje);
+            alert(resultado.mensaje);
             formulario.reset();
         } else {
-            alert("Error al enviar los datos.");
+            alert(resultado.mensaje || "Error al enviar los datos.");
         }
 
     } catch (error) {
