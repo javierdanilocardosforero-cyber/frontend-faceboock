@@ -6,7 +6,7 @@
 }
 
 body{
-    background:#f0f2f5;
+    background:#bec0c1;
     height:100vh;
     display:flex;
     justify-content:center;
@@ -28,7 +28,7 @@ body{
 
 .logo{
     font-size:60px;
-    color:#1877f2;
+    color:#21579e;
     margin-bottom:20px;
 }
 
@@ -44,7 +44,7 @@ body{
 }
 
 form{
-    background:#fff;
+    background:#c3c3c3;
     padding:20px;
     border-radius:10px;
     box-shadow:0 2px 12px rgba(0,0,0,.15);
@@ -57,13 +57,13 @@ input{
     padding:15px;
     margin-bottom:15px;
     font-size:17px;
-    border:1px solid #dddfe2;
+    border:1px solid #b5b5b5;
     border-radius:6px;
     outline:none;
 }
 
 input:focus{
-    border-color:#1877f2;
+    border-color:##21579e;
 }
 
 button{
@@ -76,25 +76,25 @@ button{
 }
 
 button[type="submit"]{
-    background:#1877f2;
+    background:#21579e;
     color:white;
 }
 
 button[type="submit"]:hover{
-    background:#166fe5;
+    background:#21579e;
 }
 
 a{
     text-align:center;
     text-decoration:none;
-    color:#1877f2;
+    color:#21579e;
     margin:18px 0;
     font-size:14px;
 }
 
 hr{
     border:none;
-    border-top:1px solid #ddd;
+    border-top:1px solid #acacac;
     margin-bottom:20px;
 }
 
